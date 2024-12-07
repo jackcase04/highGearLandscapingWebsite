@@ -1,0 +1,207 @@
+header {
+    width: 100%;
+}
+
+.links {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+
+.links li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    font-size: 16px;
+    position: absolute;
+}
+
+.home {
+    left: 0;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.services {
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+
+.gallery {
+    right: 0;
+    margin-right: 5%;
+    text-align: right;
+}
+
+.black_rectangle1 {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    min-height: 180px;
+}
+
+.section_header {
+    width: 100%;
+    background-color: #cdb471;
+    padding-top: 180px;
+    padding-bottom: 1px;;
+}
+
+.tan_bar {
+    width: 100%;
+    background-color: #cdb471;
+    padding-top: 1px;
+    padding-bottom: 1px;;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.lawn_images {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1, h2 {
+    font-family: Tahoma;
+    text-align: center;
+}
+
+p {
+    font-family: Tahoma;
+    text-align: center;
+}
+
+.bottom_yellow {
+    position: relative;
+    width: 100%;
+    background-color: #cdb471;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 20px;
+    z-index: -1;
+}
+
+.visual_services {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Vertically align items (optional) */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+  
+.visual_services li {
+    flex: 1; /* Ensure each item takes up equal space */
+    text-align: center; /* Center the content within each item */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Reset margins */
+    padding: 10px; /* Reset padding */
+  }
+  
+.visual_services li img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+  
+.lawn_care, .landscaping, .snow_removal {
+    width: auto;
+}
+
+.black_rectangle2 {
+    width: 100%;
+    background-color: black;
+    min-height: 150px;
+}
+
+.areas {
+    color: white;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:hover {
+    color: #cdb471;
+}
+
+a:active {
+    color: #cdb471;
+}
+
+h3 {
+    font-family: Tahoma;
+    text-align: center;
+}
+
+.list_services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Tahoma;
+    list-style-type: disc;
+    font-size: 18px;
+    margin: 0 auto 0 auto;
+    padding-left: 10%;
+    columns: 2;
+    column-gap: 50%;
+    padding-bottom: 20px;
+}
+
+.payment_options {
+    font-family: Tahoma;
+    list-style-type: disc;
+    font-size: 18px;
+    padding-left: 10%;
+}
+
+.list_services li {
+    margin-bottom: 10px;
+}
+
+.payment_options li {
+    margin-bottom: 10px;
+}
+
+.gallery_photos {
+    columns: 2;
+    column-gap: 1px;
+    list-style-type: none;
+}
+
+.gallery_photos li img {
+    width: 97%;
+    padding-top: 5px;
+}
