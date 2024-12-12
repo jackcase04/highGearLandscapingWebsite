@@ -15,7 +15,7 @@ header {
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 10px;
-    font-size: 16px;
+    font-size: clamp(10px, 2vw, 16px);
     position: absolute;
 }
 
@@ -108,15 +108,18 @@ p {
     margin: 0 auto;
     padding: 0;
     font-family: Tahoma;
-    font-size: 20px;
+    font-size: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
 }
   
 .visual_services li {
-    flex: 1; /* Ensure each item takes up equal space */
+    flex: 1 1 0; /* Ensure each item takes up equal space */
     text-align: center; /* Center the content within each item */
     list-style-type: none; /* Remove bullet points */
     margin: 0; /* Reset margins */
     padding: 10px; /* Reset padding */
+    box-sizing: border-box;
   }
   
 .visual_services li img {
@@ -151,7 +154,7 @@ a {
 }
 
 a:visited {
-    color: violet;
+    color: white;
 }
 
 a:hover {
@@ -162,22 +165,30 @@ a:active {
     color: #cdb471;
 }
 
+a[href^="tel"], a[href^="tel"]:hover, a[href^="tel"]:focus, a[href^="tel"]:active{
+    color: inherit;
+}
+
 h3 {
     font-family: Tahoma;
     text-align: center;
 }
 
 .list_services {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: Tahoma;
     list-style-type: disc;
+    padding: 0% 2%;
+    margin: 0 auto 3%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5% 1%; /* Adjust the spacing between columns and rows */
+    text-align: center;
+    font-family: Tahoma;
     font-size: 18px;
-    margin: 0 auto 0 auto;
-    padding-left: 10%;
-    columns: 2;
-    column-gap: 50%;
-    padding-bottom: 20px;
+}
+
+.list_services li {
+    display: list-item;
+    list-style-position: inside;
 }
 
 .payment_options {
@@ -187,21 +198,29 @@ h3 {
     padding-left: 10%;
 }
 
-.list_services li {
-    margin-bottom: 10px;
-}
-
 .payment_options li {
     margin-bottom: 10px;
 }
 
 .gallery_photos {
-    columns: 2;
-    column-gap: 1px;
-    list-style-type: none;
+    list-style: none;
+    padding: 2% 2%;
+    margin: 0 auto 5%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5% 1%; /* Adjust the spacing between columns and rows */
+    text-align: center;
 }
-
-.gallery_photos li img {
-    width: 97%;
-    padding-top: 5px;
+  
+  /* Style each list item */
+.gallery_photos li {
+    display: block;
+}
+  
+  /* Style images */
+.gallery_photos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
