@@ -174,21 +174,35 @@ h3 {
     text-align: center;
 }
 
-.list_services {
-    list-style-type: disc;
-    padding: 0% 2%;
-    margin: 0 auto 3%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 0.5% 1%; /* Adjust the spacing between columns and rows */
-    text-align: center;
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.list_left_wrapper {
+    flex: 1; /* Each div takes up 50% of the container */
+    display: flex; /* Enables Flexbox on the div */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center;
+    height: auto;
+    margin-top: -10px;
+    padding-bottom: 10px;
     font-family: Tahoma;
     font-size: 18px;
 }
 
-.list_services li {
-    display: list-item;
-    list-style-position: inside;
+.list_right_wrapper {
+    flex: 1; /* Each div takes up 50% of the container */
+    display: flex; /* Enables Flexbox on the div */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center;
+    height: auto;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    font-family: Tahoma;
+    font-size: 18px;
 }
 
 .payment_options {
